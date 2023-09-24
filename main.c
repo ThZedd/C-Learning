@@ -9,7 +9,7 @@ int main() { // main is a function
     int numbers = 1; // this is for integers (Size: 2 or 4 bytes)
     char letter = 'D'; // we use '' for characters and "" for strings (Size: 1 bytes)
     float numbers2 = 1.2; // this is for decimal numbers (Size: 4 bytes) (Stores 6-7 decimals)
-    double numbers3 = 1.998888888; // this is for decimal numbers (Sizer: 8 bytes) (Sotes 15 decimals)
+    double numbers3 = 1.998888888; // this is for decimal numbers (Size: 8 bytes) (Sotes 15 decimals)
     char string[] = "This is a string"; // this is a string
 
     printf("%d\n", numbers); // if we don´t use the %d, the console will detect a error and will not print
@@ -26,7 +26,13 @@ int main() { // main is a function
     printf("%d\n", y);
     printf("%.1f\n", z); // we put the .1 before the f, for us to get only one decimal if we wanted 2 decimals we put .2 before the f
 
-    
+    // Constants
+    // If you don't want others (or yourself) to change existing variable values, you can use the const keyword.
+    //This will declare the variable as "constant", which means unchangeable and read-only:
 
+    const int MYNUM = 15;  // myNum will always be 15
+    MYNUM = 10;  // error: assignment of read-only variable 'MYNUM'
+    //Another thing about constant variables, 
+    //is that it is considered good practice to declare them with uppercase. It is not required, but useful for code readability and common for C programmers:
 
 }
