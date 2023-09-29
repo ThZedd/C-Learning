@@ -31,8 +31,15 @@ int main() { // main is a function
     //This will declare the variable as "constant", which means unchangeable and read-only:
 
     const int MYNUM = 15;  // myNum will always be 15
-    MYNUM = 10;  // error: assignment of read-only variable 'MYNUM'
+    //MYNUM = 10;  // error: assignment of read-only variable 'MYNUM'
     //Another thing about constant variables, 
     //is that it is considered good practice to declare them with uppercase. It is not required, but useful for code readability and common for C programmers:
 
+
+    //Sizeof
+    //The memory size (in bytes) of a data type or a variable can be found with the sizeof operator:
+    printf("%lu\n", sizeof(numbers));
+    printf("%lu\n", sizeof(numbers2));
+    printf("%lu\n", sizeof(numbers3));
+    printf("%lu\n", sizeof(letter));
 }
