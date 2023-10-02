@@ -1,5 +1,5 @@
 #include<stdio.h> // this a header file library that lets us work with input and output functions, such as printf() (used in line 4). Header files add functionality to C programs.
-
+#include<stdbool.h> // this is the bool library
 int main() { // main is a function
     printf("hello world \n");
 
@@ -43,6 +43,16 @@ int main() { // main is a function
     printf("%lu\n", sizeof(numbers3));
     printf("%lu\n", sizeof(letter));
 
+     //Booleans 
+    bool isProgrammingFun = true;
+    bool isFishTasty = false;
+
+    // Return boolean values
+    printf("%d", isProgrammingFun);   // Returns 1 (true)
+    printf("%d", isFishTasty);        // Returns 0 (false)
+
+    printf("%d", 10 > 9);  // Returns 1 (true) because 10 is greater than 9
+    
 // If
 
     int time = 22;
